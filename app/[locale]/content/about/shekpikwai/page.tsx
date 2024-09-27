@@ -33,20 +33,21 @@ export default function HomePage() {
       </div>
 
       <div className="flex flex-col h-full">
-
         {Array.from(Array(6).keys()).map((index) => (
-          <p className="my-2">{t(`content${index + 1}`)}</p>
+          <p key={`content${index}`} className="my-2">
+            {t(`content${index + 1}`)}
+          </p>
         ))}
 
         <div className="flex flex-col flex-grow justify-end">
           <div className="border-t pb-16 space-y-2">
-          {Array.from(Array(6).keys()).map((index) => (
-            <p className="">
-              <span className="text-xs align-top mx-1">{index + 1}</span>
-              {t(`citation${index + 1}`)}
-            </p>
-          ))}
-        </div>
+            {Array.from(Array(6).keys()).map((index) => (
+              <p className="" key={`citation${index}`}>
+                <span className="text-xs align-top mx-1">{index + 1}</span>
+                {t(`citation${index + 1}`)}
+              </p>
+            ))}
+          </div>
         </div>
       </div>
     </div>

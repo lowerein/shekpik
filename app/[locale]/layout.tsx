@@ -1,7 +1,6 @@
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 
-import { Footer } from "@/components/Footer/Footer";
 import "./../globals.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";

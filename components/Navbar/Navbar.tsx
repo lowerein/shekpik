@@ -17,7 +17,7 @@ export const Navbar = ({ isSticky = false }: { isSticky?: boolean }) => {
     children?: NavbarItem[];
   }
 
-  let items: NavbarItem[] = [
+  const items: NavbarItem[] = [
     {
       title: "title1",
       children: [{ title: "subtitle1_1" }, { title: "subtitle1_2" }],
