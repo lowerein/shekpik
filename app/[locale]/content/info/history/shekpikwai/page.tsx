@@ -1,11 +1,11 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
-export default function HomePage() {
-  const t = useTranslations("ShekPikWai");
+export default function Page() {
+  const t = useTranslations("History_ShekPikWai");
 
   return (
-    <div className="">
+    <div className="w-full">
       <h1 className="text-[#783F04] font-bold text-2xl pb-8">{t("title")}</h1>
 
       <div className="px-4 float-right w-1/3 flex items-center flex-col">

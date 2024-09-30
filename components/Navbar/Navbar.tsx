@@ -20,14 +20,17 @@ export const Navbar = ({ isSticky = false }: { isSticky?: boolean }) => {
   const items: NavbarItem[] = [
     {
       title: "title1",
-      children: [{ title: "subtitle1_1" }, { title: "subtitle1_2" }],
+      children: [
+        { title: "subtitle1_1", url: "/content/intro/background" },
+        { title: "subtitle1_2", url: "/content/intro/methodology" },
+      ],
     },
     {
       title: "title2",
       children: [
-        { title: "subtitle2_1", url: "/content/about/shekpikwai" },
-        { title: "subtitle2_2" },
-        { title: "subtitle2_3" },
+        { title: "subtitle2_1", url: "/content/info/chronology" },
+        { title: "subtitle2_2", url: "/content/info/culture" },
+        { title: "subtitle2_3", url: "/content/info/history/shekpikwai" },
       ],
     },
     {
